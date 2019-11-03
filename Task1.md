@@ -1,43 +1,41 @@
-| Task N°    | Intitulé                 | Affectation |  Status  |
-|:-----------|:-------------------------|:-----------:|:--------:|
-|#T1|Mise en place le framework Symfony|All|Done|
-|#T2|Création d'une base de données sous MySql|All|Done|
-|#T3|Identification des caractéristiques d'un visiteur du site|All|Done|
-|#T4|Identification des caractéristiques d'un mebre de projet du site|All|Done|
-|#T5|Identification des caractéristiques d'un chef de projet du site|All|Done|
-|#T6|Identification des caractéristiques d'un Projet|All|Done|
-|#T7|Identification des caractéristiques d'une US|All|Done|
-|#T8|Identification des caractéristiques d'une Taches|All|Done|
-|#T9|Création des tables de la base de données|Khadija|ToDo|
-|#T10|Création des dépendances de la base de données|Khadija|ToDo|
-|#T11|Créer l'interface d'inscription(en précisant le nom de ce fichier où on crée cet interface,le root,avec les labels "Nom", "Email","Password","ConfirmPassword"et les champs "name","mail","password"et"confirmpassword" et un bouton de type submit appelé "Creer compte")|Arthur|ToDo|
-|#T12|Créer un service afin d'ajouter un nouveau membres dans la table Member|Sylvain|ToDo|
-|#T13|Créer l'interface de connexion avec les  champs "usermail", "password"|Arthur|ToDo|
-|#T14|Créer un service afin de vérifie que le visiteur est bien un membres et que le mot de passe est valide afin de l'authentifier|Sylvain|ToDo|
-|#T15|Créer l'interface de création d'un projet avec les champs "projectName", "projectDescription"|Khadija|ToDo|
-|#T16|Créer l'interface de création d'une US avec les champs "USName", "USDescription", "USDifficulté", "USPriorité"|Khadija|ToDo|
-|#T17|Créer l'interface de création d'une tache avec les champs "tacheName", "tacheDescription", "tacheStatus", "tacheMembre" (facultatif), "tacheDuree"|Arthur|ToDo|
-|#T18|Créer un repository afin d'ajouter un projet dans la table Project et de récupérer la liste des projets existant, la liste des projet existant lié a un membre authentifié, un projet spécifique...|Sylvain|ToDo|
-|#T19|Créer un repository afin d'ajouter une US dans la table US et de récupérer la liste des US existant, la liste des US existant lié a un projet, une US spécifique...|Sylvain|ToDo|
-|#T20|Créer un repository afin d'ajouter une tache dans la table Task et de récupérer la liste des taches existantes, la liste des taches existantes liées a un projet, une tache spécifique...|Sylvain|ToDo|
-|#T21|Créer l'interface de la liste des projets avec comme id de liste "projectsList"|Arthur|ToDo|
-|#T22|Créer l'interface d'affichage des détails d'un projet|Khadija|ToDo|
-|#T23|Création d'une table invitation avec les champs (memberId, projectID, invitationDate, invitationKey).|Arthur|ToDo|
-|#T24|Créer un service afin de générer l'invitaion et l'ajouter dans la base de données, valider le couple  (clef d'invitation,date) récupéré afin d'ajouter le membre au projet|Khadija|ToDo|
-|#T25|Créer l'interface d'invitation dans un projet avec comme nom de champ "share project with" pour l'utilisateur à inviter|Khadija|ToDo
-|#T26|Créer l'interface d'affichage de la liste des membres invité ou dans le projets, avec la possibilité de récupérer le lien d'invitaion des membres pas encore ajoutés et la possibilité de les retirer du projet.|Arthur|ToDo|
-|#T27|Envoie de mail lors de l'invitation d'un membre à un projet avec un lien contenant une clef d'invitation|Arthur|ToDo|
-|#T28|Créer l'interface de vérification d'invitation|All|ToDo|
-|#T29|Tester le formulaire de création de compte|All|ToDo|
-|#T30|Tester le formulaire de connexion des membres|All|ToDo|
-|#T31|Tester le formulaire d'ajout d'un projet|All|ToDo|
-|#T32|Tester le formulaire d'ajout d'une US|All|ToDo|
-|#T33|Tester le formulaire d'ajout d'une tache|All|ToDo|
-|#T34|Tester le formulaire d'invitation d'un membre à un projet|All|ToDo|
-|#T35|Tester les opérations CRUD d'un membre dans la base de données|All|ToDo|
-|#T36|Tester les opérations CRUD d'un projet dans la base de données|All|ToDo|
-|#T37|Tester les opérations CRUD d'une invitation dans la base de données|All|ToDo|
-|#T38|Tester les opérations CRUD d'une US dans la base de données|All|ToDo|
-|#T39|Tester les opérations CRUD d'une tache dans la base de données|All|ToDo|
-|#T40|Tester la génération et vérification des invitations|All|ToDo|
-|#T41|Tester l'envoie de mails d'invitation à un projet|All|ToDo|
+| Task N°    | Intitulé                 | US(s) associée(s) | Estimation (j/h) | Affectation |  Status  |
+|:-----------|:-------------------------|:-----------------:|:----------------:|:-----------:|:--------:|
+| T1 | Initialiser le projet pour fonctionner avec le framework Symfony. La mise en place est automatique grâce à la CLI de Symfony. Ceci comprend la création de la structure de base du projet (voir [ici](https://symfony.com/doc/current/configuration/override_dir_structure.html)) ainsi que du fichier composer.json qui liste les dépendances. | Aucune | 0,3 | All | Done |
+| T2 | Créer la classe Member (_**Member.php**_ et son repository _**MemberRepository.php**_) contenant la définition d'un membre (utilisateur authentifié) et son mapping en base de données. Un membre est caractérisé à ce stade par une adresse email (*emailAddress*), un mot de passe (*password*) et un nom (*name*).| 1, 2, 3 | 0.3 | Khadija | ToDo | 
+| T3 | Créer le formulaire d'inscription (_**RegistrationType.php**_) avec les champs "Nom" (*name*), "Adresse email" (*emailAddress*), "Mot de passe" (*password*) et "Confirmation mot de passe" (*confirmPassword*). Ces deux derniers champs doivent être identiques. | 1 | 0.3 | ? | ToDo |
+| T4 | Créer la template de l'interface d'inscription (_**register.html.twig**_) intégrant le formulaire d'enregistrement et un bouton de type "submit" appelé "Creer compte"). | 1 | 0.3 | ? | ToDo |
+| T5 | Créer un service (_**RegistrationService.php**_) permettant de créer et ajouter un nouveau membre (objet Member) dans la base de données. Ce service devra également vérifier que l'utilisateur n'existe pas encore (en fonction de son adresse email) et hashera son mot de passe avant de l'ajouter en base de données. | 1 | 0.5 | Sylvain | ToDo |
+| T6 | Créer le contrôleur (_**RegistrationController.php**_) affichant la template d'inscription sur la route */register* et récupérant les informations envoyées par le formulaire sur la même route. Il délègue la validation et création du membre au service *RegistrationService*. Ce contrôleur se charge également de réafficher le formulaire si une erreur se produit lors de la création de l'utilisateur (le formulaire est invalide ou l'utilisateur existe déjà, par exemple). | 1 | 0.5 | ? | ToDo |
+| T7 | Créer la template de l'interface de connexion (_**login.html.twig**_) contenant un simple formulaire HTML avec les champs "Adresse email" (*emailAddress*) et "Mot de passe" (*password*) | 2 | 0.3 | Arthur | ToDo |
+| T8 | Créer une implementation d'un *AuthenthicationGuard* de Symfony (_**LoginFormAuthenticator.php**_) gérant l'authentification d'un membre en fonction de l'adresse email et du mot de passe contenus dans le formulaire de connexion. En cas de succès, le formulaire devra rediriger vers la page d'accueil (route */dashboard*). En cas d'erreur, le framework se charge d'afficher les erreurs sur le formulaire. | 2 | 0.5 | Sylvain | ToDo |
+| T9 | Créer un contrôleur (_**LoginController.php**_) affichant la template d'authentification sur la route */login*. Il doit aussi passer les erreurs d'authentification à la template s'il y en a. De plus, il est nécessaire de modifier la configuration contenue dans *config/packages/security.yaml* pour utiliser cette route à des fins d'authentification. La gestion des données contenues dans le formulaire est automatiquement déléguée à l'AuthenticationGuard par le framework. | 2 | 0.3 | ? | ToDo |
+| T10 | Créer la template d'un header (_**app_header.html.twig**_) contenant la mention "Connecté en tant que <NOM DU MEMBRE>" ainsi qu'un bouton permettant à un utilisateur authentifié de se déconnecter. Ce bouton sera un lien vers la route */logout*. De plus, il faut ajouter cette route dans le fichier de configuration *config/packages/security.yaml* afin de l'utiliser pour déconnecter un utilisateur. | 3 | 0.3 | ? | ToDo |
+| T11 | Créer la classe Project (_**Project.php**_ et son repository _**ProjectRepository.php**_) contenant la définition d'un projet et son mapping en base de données. Un projet est caractérisé à ce stage par un nom (*name*), une description (*description*), un créateur/propriétaire (*owner*) et une date de création (*creationDate*). | 4, 5, 8, 9 | 0.3 | ? | ToDo |
+| T12 | Modifier la classe *Member* pour ajouter deux champs supplémentaire : une liste des projets créés/possédés par le membre (*ownedProjects*) et une liste des projets auxquels l'utilisateur contribue (*contributedProjects*). | 4, 6, 7 | 0.3 | ? | ToDo |
+| T13 | Créer la template de la page d'accueil (_**dashboard.html.twig**_), comportant une liste des projets dont le membre est le créateur suivie d'une liste de ceux dont il est contributeur. | 4 | 0.5 | ? | ToDo |
+| T14 | Créer un contrôleur (_**DashboardController.php**_) récupérant les projets créés et contribués grâce aux propriétés *ownedProjects* et *contributedProjects* par le membre connecté et affichant la template de la page d'accueil sur la route */dashboard*. | 4 | 0.3 | ? | ToDo |
+| T16 | Créer le formulaire de création et d'édition d'un projet (_**ProjectType.php**_) avec les champs "Nom" (*name*) et "Description" (*description*). | 5, 8 | 0.3 | ? | ToDo |
+| T17 | Créer la template de création/édition d'un projet (_**project_form.html.twig**_) intégrant le formulaire de projet ainsi qu'un bouton de type "submit" permettant de l'envoyer et intitulé "Créer" lors d'une création et "Valider les modifications" lors d'une édition. | 5, 8 | 0.5 | ? | ToDo |
+| T18 | Créer une template (_**project_members.html.twig**_) affichant la liste des membres d'un projet (chaque ligne contient le nom du membre et un bouton représentant une croix permettant de supprimer un membre) ainsi qu'un formulaire HTML comportant les éléments suivants : un champ de texte intitulé "Adresse email"(*memberEmailAddress*) et un bouton de type "submit" intitulé "Ajout un membre". Ce formulaire permet de saisir l'adresse email d'un membre pour lui envoyer une invitation à rejoindre le projet. Ce formulaire doit être envoyé à la route */projects/<id_projet>/sendInvitation*. | 6| 0.5 | ? | ToDo |
+| T19 | Créer une template de menu latéral (_**project_menu.html.twig**_) contenant des liens vers les pages de listing des éléments d'un projet. Dans un premier temps, ce menu doit contenir les liens suivants : <ul><li>"Details du projet" : lien vers la route */projects/<id_project>*</li><li>"Liste des issues" : lien vers la route */projects/<id_project>/issues*</li></ul> | Aucune | 0.3 | ? | ToDo |
+| T20 | Créer la template de visualisation des détails d'un projet (_**project_details.html.twig**_) contenant le titre, la description et intégrant la template affichant la liste des membres d'un projet. De plus, à côté du titre et de la description, devront figurer deux boutons : un bouton "Editer" menant à la page d'édition des détails (route */projects/<id_project>/edit* et un bouton "Supprimer" permettant de supprimer un projet (lien vers la route */projects/<id_project>/delete*. Enfin, la template de menu latéral doit être incluse dans celle-ci. | 6, 7, 8, 9 | 0.5 | ? | ToDo |
+| T21 | Créer la classe Invitation (_**Invitation.php**_ et son repository _**InvitationRepository.php**_) contenant la définition d'une invitation et son mapping en base de données. Une invitation est caractérisée par une clé (*invitationKey*), une date de création (*date*), un projet auquel elle se rapport (*project*) et un membre cible (*member*). | 6, 7 | 0.3 | ? | ToDo |
+| T22 | Créer une template d'email pour l'invitation (_**invitation_email.html.twig**_) qui contient un lien vers la route */projects/<id_project>/acceptInvitation/<invitation_key>* permettant à un membre d'être notifié d'une invitation et de l'accepter. | 6, 7 | 0.3 | ? | ToDo |
+| T23 | Créer un service (_**InvitationService.php**_) qui permet de créer une invitation vers un projet pour un membre, de valider une invitation (en vérifiant qu'une clé correspond bien à un utilisateur et que l'invitation a été créée il y a moins d'une semaine) et d'ajouter un membre comme contributeur d'un projet en utilisant les informations contenues dans une invitation. | 6, 7 | 0.5 | ? | ToDo |
+| T24 | Créer un contrôleur pour la gestion des projets (_**ProjectController.php**_) qui expose les routes suivantes : <ul><li>*/projects/<id_project>* qui affiche la template de détails de projet pour le projet <id_project>.</li><li>*/projects/<id_project>/edit* qui affiche la template d'édition de projet pour le projet <id_project> et utilise le repository pour le modifier en fonction des informations contenues dans le formulaire.</li><li>*/projects/<id_project>/delete* qui utilise le repository pour supprimer le projet <id_project></li><li>*/projects/<id_projet>/sendInvitation* qui utilise un service pour créer une invitation pour l'utilisateur dont l'adresse email est contenue dans le formulaire et envoie un email d'invitation à celui-ci.</li><li>*/projects/<id_project>/acceptInvitation/<invitation_key>* qui utilise un service pour valider la clé d'invitation et ajouter le membre à la liste des contributeurs du projet <id_project>.</li></ul> | 6, 7 | 0.7 | ? | ToDo |
+| T25 | Créer la classe Issue (_**Issue.php**_ et son repository _**IssueRepository.php**_) contenant la définition d'une issue et son mapping en base de données. Une issue est caractérisée par un nom (*name*), une description (*description*), une difficulté (*difficulty*), une priorité (*priority*) et un statut (*status*, peut valoir TODO, DOING ou DONE). | 10, 11, 12, 13 | 0.3 | ? | ToDo |
+| T26 | Modifier la classe Project pour lui ajouter un champ contenant la liste des issues qui lui sont associées (*issues*). | 10 | 0.3 | ? | ToDo |
+| T27 | Créer un formulaire de création et d'édition d'une issue (_**IssueType.php**_) avec les champs "Identifiant" (*name*), "Description" (*description*), "Difficulté" (*difficulty*), "Priorité" (*priority*) et "Statut" (*status*). | 11, 12 | 0.3 | ? | ToDo |
+| T28 | Créer la template de création/édition d'une issue (_**issue_form.html.twig**_) intégrant le formulaire d'issue ainsi qu'un bouton de type "submit" permettant de l'envoyer et intitulé "Créer" lors d'une création et "Valider les modifications" lors d'une édition. | 11, 12 | 0.3 | ? | ToDo |
+| T29 | Créer une template (_**issue_list.html.twig**_) affichant une liste des issues avec leur identifiant, leur priorité et leur statut, ainsi qu'un bouton permettant de les supprimer (lien vers route */projects/<id_project>/issues/<id_issue>/delete*). De plus, un clic sur une issue mène à sa page de modification (lien vers route */projects/<id_project>/issues/<id_issue>/edit*). | 10, 13 | 0.5 | ? | ToDo |
+| T30 | Créer un contrôleur pour la gestion des issues (_**IssueController.php**_) qui expose les routes suivantes : <ul><li>*/projects/<id_project>/issues* qui affiche la template de liste des issues pour le projet <id_project>.</li><li>*/projects/<id_project>/issues/<id_issue>/edit* qui affiche la template d'édition d'issue pour l'issue <id_issue> et utilise le repository pour la modifier en fonction des informations contenues dans le formulaire.</li><li>*/projects/<id_project>/issues/<id_issue>/delete* qui utilise le repository pour supprimer l'issue <id_issue></li></ul> | 10, 11, 12, 13 | 0.7 | ? | ToDo |
+| T31 | Tester le formulaire de création de compte | 1 | 0.5 | All | ToDo |
+| T32 | Tester le formulaire de connexion des membres | 2 | 0.5 | All | ToDo |
+| T33 | Tester le formulaire d'ajout/édition d'un projet | 5, 8 | 0.5 | All | ToDo |
+| T34 | Tester le formulaire d'ajout/édition d'une issue | 11, 12 | 0.5 | All | ToDo |
+| T35 | Tester le formulaire d'invitation d'un membre à un projet | 6, 7 | 0.5 | All | ToDo |
+| T36 | Tester les opérations CRUD d'un membre dans la base de données | 1, 2, 3 | 0.5 | All | ToDo |
+| T37 | Tester les opérations CRUD d'un projet dans la base de données | 4, 5, 8, 9 | 0.5 | All | ToDo |
+| T38 | Tester les opérations CRUD d'une invitation dans la base de données | 6, 7 | 0.5 | All | ToDo |
+| T39 | Tester les opérations CRUD d'une issue dans la base de données | 10, 11, 12, 13 | 0.5 | All | ToDo |
+| T40 | Tester la génération et vérification des invitations | 6, 7 | 0.5 | All | ToDo|

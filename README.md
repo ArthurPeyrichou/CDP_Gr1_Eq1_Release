@@ -12,8 +12,8 @@
 | 3 | En tant qu'**utilisateur authentifié**, je souhaite me déconnecter en cliquant sur le bouto "déconnexion" dans la barre d'outil de l'application afin d'arrêter (_temporairement_) d'utiliser l'application | 1 | HAUT | Faite |
 | 4 | En tant qu'**utilisateur authentifié**, je souhaite lister mes projets et ceux dont je suis contributeur sur ma page d'accueil afin de pouvoir accéder à ceux-ci | 3 | HAUT | Faite |
 | 5 | En tant qu'**utilisateur authentifié**, je souhaite créer un projet[(1)](#projectDefinition) en cliquant sur le bouton "nouveau projet" sur ma page d'accueil afin de pouvoir en effectuer la gestion | 2 | HAUT | Faite |
-| 6 | En tant que **créateur de projet**, je souhaite ajouter un contributeur à un de mes projets en entrant son adresse email, ce qui lui enverra une invitation à validité limitée par email, ou bien supprimer un contributeur afin de décider qui peut contribuer à la gestion du projet | 5 | HAUT | A faire |
-| 7 | En tant qu'**utilisateur authentifié**, je souhaite accepter une invitation à devenir contributeur d'un projet en cliquant sur le lien d'invitation qui m'a été envoyé par mail par le créateur afin de pouvoir contribuer à la gestion du projet | 5 | HAUT | A faire|
+| 6 | En tant que **créateur de projet**, je souhaite ajouter un contributeur à un de mes projets en entrant son adresse email, ce qui lui enverra une invitation à validité limitée, ou bien supprimer un contributeur afin de décider qui peut contribuer à la gestion du projet | 5 | HAUT | A faire |
+| 7 | En tant qu'**utilisateur authentifié**, je souhaite accepter une invitation à devenir contributeur d'un projet en cliquant sur le lien d'invitation qui m'a été notifié afin de pouvoir contribuer à la gestion du projet | 5 | HAUT | A faire|
 | 8 | En tant que **créateur de projet**, je souhaite modifier les informations liées à un de mes projets en cliquant sur le bouton "éditer" dans les détails du projet afin de les rectifier ou les faire évoluer | 2 | BAS | A faire |
 | 9 | En tant que **créateur de projet**, je souhaite supprimer un de mes projets en cliquant sur le bouton "supprimer" dans la liste des projets afin de cesser d'en effectuer la gestion | 5 | BAS | A faire |
 | 10 | En tant que **contributeur**, je souhaite lister les issues (**_backlog_**) d'un projet afin de pouvoir les visualiser et y accéder | 3 | HAUT | Faite |
@@ -43,6 +43,8 @@
 | 34 | En tant que **contributeur**, je souhaite supprimer une ressource de documentation afin qu'elle n'apparaisse plus dans la liste | 4 | BAS | A faire |
 | 35 | En tant que **contributeur**, je souhaite visualiser les tâches d'un projet sous forme de calendrier afin de me rendre compte plus aisément du planning du projet | 4 | BAS | A faire |
 | 36 | En tant que **contributeur**, je souhaite trier les tâches en fonction des dates de début et de fin afin de restreindre l'affichage du calendier à une période spécifique | 3 | BAS | A faire |
+| 37 | En tant que **contributeur**, je souhaite pouvoir marquer une tâche comme étant en cours de réalisation ou la marquer comme terminée depuis la liste afin de suivre l'avancement du projet | 3 | HAUT | A faire |
+| 38 | En tant que **contributeur**, je souhaite pouvoir marquer renseigner quels tests de la liste passent et lesquels ne passent pas et visualiser le pourcentage de tests qui passent afin d'avoir une idée des issues à retravailler | 3 | BAS | A faire |
 
 #### Définition des rôles :
 * **Visiteur** : un utilisateur non authentifié, soit parce qu'il n'est pas enregistré, soit parce qu'il ne s'est pas connecté.
@@ -57,7 +59,7 @@
 * Date de création [(8)](#dateNote)
 
 <a id="issueDefinition"></a>(2) Champs constitutifs d'une issue :
-* Nom (numéro)
+* Numéro
 * Description
 * Identifiant (autogénéré)
 * Difficulté (un chiffre de 1 à 10)
@@ -65,32 +67,35 @@
 * Un sprint pendant lequel l'issue doit être réalisée
 
 <a id="taskDefinition"></a>(3) Champs constitutifs d'une tâche :
-* Nom (numéro)
+* Numéro
 * Description
 * Identifiant (autogénéré)
-* Status (à faire, en cours, fait, rendu)
+* Statut (à faire, en cours, fait)
 * Un membre à qui la tâche est assignée (facultatif)
 * Une ou plusieurs issue(s) associée(s)
-* Temps nécessaire à sa réalisation (durée en jours)
+* Ressources nécessaires à sa réalisation (en jour/homme)
 
 <a id="sprintDefinition"></a>(4) Champs constitutifs d'un sprint :
-* Nom (numéro)
+* Numéro (autogénéré)
 * Identifiant (autogénéré)
 * Date de début [(8)](#dateNote)
 * Date de fin [(8)](#dateNote)
+* Une ou plusieurs issue(s) à implémenter
 
 <a id="releaseDefinition"></a>(5) Champs constitutifs d'une release :
-* Nom (numéro)
+* Numéro (autogénéré)
 * Description
+* Date
 * Identifiant (autogénéré)
-* Liste du(des) sprint(s) qui la constituent
+* Liste du(des) issues(s) qui y sont implémentées
 * Zip ou lien vers les fichiers de la release
 
 <a id="testDefinition"></a>(6) Champs constitutifs d'un test :
-* Nom (numéro)
-* Description
+* Nom
+* Description (scénario)
 * Identifiant (autogénéré)
 * Une unique issue à laquelle se rapporte le test
+* Un indicateur de réussite/échec du test
 
 <a id="docDefinition"></a>(7) Une ressource de documentation est un fichier pouvant être de type divers (_md, latex, html, pdf, txt, pptx, excel,..._)
 

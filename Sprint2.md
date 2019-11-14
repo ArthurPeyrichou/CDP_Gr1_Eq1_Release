@@ -9,8 +9,8 @@ Nous allons également terminer les issues relatives à la gestion des membres d
 
 | Issue N°   | Intitulé                 | Difficulté | Priorité | Statut |
 |:-----------|:-------------------------|:----------:|:--------:|:------:|
-| 6 | En tant que **créateur de projet**, je souhaite ajouter un contributeur à un de mes projets en entrant son adresse email, ce qui lui enverra une invitation à validité limitée par email, ou bien supprimer un contributeur afin de décider qui peut contribuer à la gestion du projet | 5 | HAUT | A faire |
-| 7 | En tant qu'**utilisateur authentifié**, je souhaite accepter une invitation à devenir contributeur d'un projet en cliquant sur le lien d'invitation qui m'a été envoyé par mail par le créateur afin de pouvoir contribuer à la gestion du projet | 5 | HAUT | A faire|
+| 6 | En tant que **créateur de projet**, je souhaite ajouter un contributeur à un de mes projets en entrant son adresse email, ce qui lui enverra une invitation à validité limitée, ou bien supprimer un contributeur afin de décider qui peut contribuer à la gestion du projet | 5 | HAUT | A faire |
+| 7 | En tant qu'**utilisateur authentifié**, je souhaite accepter une invitation à devenir contributeur d'un projet en cliquant sur le lien d'invitation qui m'a été notifié afin de pouvoir contribuer à la gestion du projet | 5 | HAUT | A faire|
 | 8 | En tant que **créateur de projet**, je souhaite modifier les informations liées à un de mes projets en cliquant sur le bouton "éditer" dans les détails du projet afin de les rectifier ou les faire évoluer | 2 | BAS | A faire |
 | 9 | En tant que **créateur de projet**, je souhaite supprimer un de mes projets en cliquant sur le bouton "supprimer" dans la liste des projets afin de cesser d'en effectuer la gestion | 5 | BAS | A faire |
 | 11 | En tant que **contributeur**, je souhaite créer une issue dans un projet afin de pouvoir la gérer | 2 | HAUT | A faire |
@@ -34,6 +34,8 @@ Nous allons également terminer les issues relatives à la gestion des membres d
 | 29 | En tant que **contributeur**, je souhaite créer un test pour une issue afin de pouvoir le gérer | 2 | BAS | A faire |
 | 30 | En tant que **contributeur**, je souhaite modifier un test afin de rectifier ses informations | 2 | BAS | A faire |
 | 31 | En tant que **contributeur**, je souhaite supprimer un test afin qu'il n'apparaisse plus dans la liste | 4 | BAS | A faire |
+| 37 | En tant que **contributeur**, je souhaite pouvoir marquer une tâche comme étant en cours de réalisation ou la marquer comme terminée depuis la liste afin de suivre l'avancement du projet | 3 | HAUT | A faire |
+| 38 | En tant que **contributeur**, je souhaite pouvoir marquer renseigner quels tests de la liste passent et lesquels ne passent pas et visualiser le pourcentage de tests qui passent afin d'avoir une idée des issues à retravailler | 3 | BAS | A faire |
 
 ## Object des tâches à réaliser :
 

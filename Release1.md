@@ -2,9 +2,13 @@
 
 ## Récupération de la release :
 
-La release est disponible sur le dépôt de test à l'adresse : https://github.com/ArthurPeyrichou/CDP_Gr1_Eq1_Dev
+La release est disponible sur ce dépôt dans l'archive [releases/release1.zip](releases/release1.zip).
 
-Le numéro de commit concluant la release est : 5b99e8c3e54edef8744653db0975b8afb5020801
+Il est possible de l'installer facilement via Docker en se positionnant à la racine de l'archive et en lançant :
+
+``
+docker-compose up -d
+``
 
 ## Issues réalisées
 

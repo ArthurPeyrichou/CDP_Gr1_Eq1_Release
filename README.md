@@ -45,6 +45,8 @@
 | 36 | En tant que **contributeur**, je souhaite trier les tâches en fonction des dates de début et de fin afin de restreindre l'affichage du calendier à une période spécifique | 3 | BAS | A faire |
 | 37 | En tant que **contributeur**, je souhaite pouvoir marquer une tâche comme étant en cours de réalisation ou la marquer comme terminée depuis la liste afin de suivre l'avancement du projet | 3 | HAUT | Faite |
 | 38 | En tant que **contributeur**, je souhaite pouvoir marquer renseigner quels tests de la liste passent et lesquels ne passent pas et visualiser le pourcentage de tests qui passent afin d'avoir une idée des issues à retravailler | 3 | BAS | A faire |
+| 39 | En tant que **contributeur**, je souhaite pouvoir visualiser l'avancement du projet sous forme d'un Burn Down Chart afin de déterminer la vélocité de l'équipe. | 3 | BAS | A faire |
+| 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une tâche) afin de déterminer collectivement l'effort nécessaire à la réalisation de mes tâches | 3 | BAS | A faire |
 
 #### Définition des rôles :
 * **Visiteur** : un utilisateur non authentifié, soit parce qu'il n'est pas enregistré, soit parce qu'il ne s'est pas connecté.
@@ -55,19 +57,19 @@
 <a id="projectDefinition"></a>(1) Champs constitutifs d'un projet :
 * Nom
 * Description
-* Identifiant (a priori autogénéré)
+* Identifiant (autogénéré)
 * Date de création [(8)](#dateNote)
 
 <a id="issueDefinition"></a>(2) Champs constitutifs d'une issue :
-* Numéro
+* Numéro (autogénéré)
 * Description
 * Identifiant (autogénéré)
 * Difficulté (un chiffre de 1 à 10)
-* Priorité (un chiffre de 1 à 10) (un code couleur sera utilisé pour identifier visuellement la priorité des issues)
+* Priorité (un chiffre de 1 à 10)
 * Un sprint pendant lequel l'issue doit être réalisée
 
 <a id="taskDefinition"></a>(3) Champs constitutifs d'une tâche :
-* Numéro
+* Numéro (autogénéré)
 * Description
 * Identifiant (autogénéré)
 * Statut (à faire, en cours, fait)

@@ -16,7 +16,8 @@ Lors de ce sprint, nous avons l'intention de nous focaliser sur l'ajout d'une ch
 | 34 | En tant que **contributeur**, je souhaite supprimer une ressource de documentation afin qu'elle n'apparaisse plus dans la liste | 4 | BAS | A faire |
 | 35 | En tant que **contributeur**, je souhaite visualiser les tâches d'un projet sous forme de calendrier afin de me rendre compte plus aisément du planning du projet | 4 | BAS | A faire |
 | 36 | En tant que **contributeur**, je souhaite trier les tâches en fonction des dates de début et de fin afin de restreindre l'affichage du calendier à une période spécifique | 3 | BAS | A faire |
-
+| 39 | En tant que **contributeur**, je souhaite pouvoir visualiser l'avancement du projet sous forme d'un Burn Down Chart afin de déterminer la vélocité de l'équipe. | 3 | BAS | A faire |
+| 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une tâche) afin de déterminer collectivement l'effort nécessaire à la réalisation de mes tâches | 3 | BAS | A faire |
 ## Object des tâches à réaliser :
 
 Une énumération et un suivi des tâches à accomplir afin de réaliser les issues listées ci-dessus se trouvent ici : 

@@ -46,7 +46,8 @@
 | 37 | En tant que **contributeur**, je souhaite pouvoir marquer une tâche comme étant en cours de réalisation ou la marquer comme terminée depuis la liste afin de suivre l'avancement du projet | 3 | HAUT | Faite |
 | 38 | En tant que **contributeur**, je souhaite pouvoir marquer renseigner quels tests de la liste passent et lesquels ne passent pas et visualiser le pourcentage de tests qui passent afin d'avoir une idée des issues à retravailler | 3 | BAS | A faire |
 | 39 | En tant que **contributeur**, je souhaite pouvoir visualiser l'avancement du projet sous forme d'un Burn Down Chart afin de déterminer la vélocité de l'équipe. | 3 | BAS | A faire |
-| 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une tâche) afin de déterminer collectivement l'effort nécessaire à la réalisation de mes tâches | 3 | BAS | A faire |
+| 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une tâche) afin de déterminer collectivement l'effort nécessaire à la réalisation de mes tâches | 5 | BAS | A faire |
+| 41 | En tant que **contributeur**, je souhaite pouvoir créer/modifier/supprimer une tâche directement dans un sprint et non pas au niveau global afin de pouvoir gérer les tâches après le début d'un sprint. | 3 | BAS | A faire |
 
 #### Définition des rôles :
 * **Visiteur** : un utilisateur non authentifié, soit parce qu'il n'est pas enregistré, soit parce qu'il ne s'est pas connecté.

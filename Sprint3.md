@@ -19,6 +19,7 @@ Lors de ce sprint, nous avons l'intention de nous focaliser sur l'ajout d'une ch
 | 39 | En tant que **contributeur**, je souhaite pouvoir visualiser l'avancement du projet sous forme d'un Burn Down Chart afin de déterminer la vélocité de l'équipe. | 3 | BAS | A faire |
 | 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une tâche) afin de déterminer collectivement l'effort nécessaire à la réalisation de mes tâches | 5 | BAS | A faire |
 | 41 | En tant que **contributeur**, je souhaite pouvoir créer/modifier/supprimer une tâche directement dans un sprint et non pas au niveau global afin de pouvoir gérer les tâches après le début d'un sprint. | 3 | BAS | A faire |
+| 42 | En tant que **membre**, je souhaite pouvoir demander à récupérer mon mot de passe via un lien envoyé par email en cliquant sur un bouton "Mot de passe oublié" sur l'écran de connexion si je l'ai oublié afin de pouvoir me connecter à nouveau. | 3 | BAS | A faire |
 
 ## Object des tâches à réaliser :
 

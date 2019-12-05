@@ -1,6 +1,6 @@
 # Sprint 3
 
-Le sprint 3 se déroule du 25 novembre 2019 au 6 décembre 2019.
+Le sprint 3 se déroule du 25 novembre 2019 au 10 décembre 2019.
 
 Lors de ce sprint, nous avons l'intention de nous focaliser sur l'ajout d'une chaîne d'intégration continue pour notre projet ainsi que sur l'écriture de tests.
 

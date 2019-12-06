@@ -23,7 +23,7 @@
 | 14 | En tant que **contributeur**, je souhaite lister les tâches d'un projet afin de pouvoir les visualiser et y accéder | 3 | HAUT | Faite |
 | 15 | En tant que **contributeur**, je souhaite créer une tâche[(3)](#taskDefinition) dans un projet afin de pouvoir la gérer | 2 | HAUT | Faite |
 | 16 | En tant que **contributeur**, je souhaite trier la liste des tâches en fonction de leur statut afin de pouvoir visualiser ce qui est fait/qu'il reste à faire | 3 | HAUT | Faite |
-| 17 | En tant que **contributeur**, je souhaite trier la liste des tâches en fonction des issues auxquelles elles se rattachent afin d'identifier les tâches à effectuer pour finir une issue | 3 | HAUT | A faire |
+| 17 | En tant que **contributeur**, je souhaite trier la liste des tâches en fonction des issues auxquelles elles se rattachent afin d'identifier les tâches à effectuer pour finir une issue | 3 | HAUT | Faite |
 | 18 | En tant que **contributeur**, je souhaite modifier une tâche afin de rectifier ses informations | 2 | HAUT | Faite |
 | 19 | En tant que **contributeur**, je souhaite supprimer une tâche (non achevée) afin qu'elle n'apparaisse plus dans la liste | 4 | HAUT | Faite |
 | 20 | En tant que **contributeur**, je souhaite lister les sprints d'un projet afin de pouvoir les visualiser et y accéder | 3 | BAS | Faite |
@@ -38,18 +38,19 @@
 | 29 | En tant que **contributeur**, je souhaite créer un test[(6)](#testDefinition) pour une issue afin de pouvoir le gérer | 2 | BAS | Faite |
 | 30 | En tant que **contributeur**, je souhaite modifier un test afin de rectifier ses informations | 2 | BAS | Faite |
 | 31 | En tant que **contributeur**, je souhaite supprimer un test afin qu'il n'apparaisse plus dans la liste | 4 | BAS | Faite |
-| 32 | En tant que **contributeur**, je souhaite lister les ressources de documentation d'un projet afin de pouvoir les visualiser et y accéder | 4 | BAS | A faire |
-| 33 | En tant que **contributeur**, je souhaite ajouter une ressource de documentation[(7)](#docDefinition) dans un projet afin de pouvoir la gérer | 3 | BAS | A faire |
-| 34 | En tant que **contributeur**, je souhaite supprimer une ressource de documentation afin qu'elle n'apparaisse plus dans la liste | 4 | BAS | A faire |
+| 32 | En tant que **contributeur**, je souhaite lister les ressources de documentation d'un projet afin de pouvoir les visualiser et y accéder | 4 | BAS | Faite |
+| 33 | En tant que **contributeur**, je souhaite ajouter une ressource de documentation[(7)](#docDefinition) dans un projet afin de pouvoir la gérer | 3 | BAS | Faite |
+| 34 | En tant que **contributeur**, je souhaite supprimer une ressource de documentation afin qu'elle n'apparaisse plus dans la liste | 4 | BAS | Faite |
 | 35 | En tant que **contributeur**, je souhaite visualiser les tâches d'un projet sous forme de calendrier afin de me rendre compte plus aisément du planning du projet | 4 | BAS | A faire |
 | 36 | En tant que **contributeur**, je souhaite trier les tâches en fonction des dates de début et de fin afin de restreindre l'affichage du calendier à une période spécifique | 3 | BAS | A faire |
 | 37 | En tant que **contributeur**, je souhaite pouvoir marquer une tâche comme étant en cours de réalisation ou la marquer comme terminée depuis la liste afin de suivre l'avancement du projet | 3 | HAUT | Faite |
-| 38 | En tant que **contributeur**, je souhaite pouvoir marquer renseigner quels tests de la liste passent et lesquels ne passent pas et visualiser le pourcentage de tests qui passent afin d'avoir une idée des issues à retravailler | 3 | BAS | A faire |
-| 39 | En tant que **contributeur**, je souhaite pouvoir visualiser l'avancement du projet sous forme d'un Burn Down Chart afin de déterminer la vélocité de l'équipe. | 3 | BAS | A faire |
-| 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une tâche) afin de déterminer collectivement l'effort nécessaire à la réalisation de mes tâches | 5 | BAS | A faire |
-| 41 | En tant que **contributeur**, je souhaite pouvoir créer/modifier/supprimer une tâche directement dans un sprint et non pas au niveau global afin de pouvoir gérer les tâches après le début d'un sprint. | 3 | BAS | A faire |
+| 38 | En tant que **contributeur**, je souhaite pouvoir marquer renseigner quels tests de la liste passent et lesquels ne passent pas et visualiser le pourcentage de tests qui passent afin d'avoir une idée des issues à retravailler | 3 | BAS | Faite |
+| 39 | En tant que **contributeur**, je souhaite pouvoir visualiser l'avancement du projet sous forme d'un Burn Down Chart afin de déterminer la vélocité de l'équipe. | 3 | BAS | Faite |
+| 40 | En tant que **contributeur**, je souhaite pouvoir organiser et participer à un Planning Poker avec les autres contributeurs d'un projet (lors de l'ajout d'une issue) afin de déterminer collectivement la difficulté nécessaire à la réalisation de mes issues | 5 | BAS | Faite |
+| 41 | En tant que **contributeur**, je souhaite pouvoir créer/modifier/supprimer une tâche directement dans un sprint et non pas au niveau global afin de pouvoir gérer les tâches après le début d'un sprint. | 3 | BAS | Faite |
 | 42 | En tant que **membre**, je souhaite pouvoir demander à récupérer mon mot de passe via un lien envoyé par email en cliquant sur un bouton "Mot de passe oublié" sur l'écran de connexion si je l'ai oublié afin de pouvoir me connecter à nouveau. | 3 | BAS | A faire |
-| 43 | En tant que **contributeur**, je souhaite pouvoir être notifié lors de changements dans le projet: départs/ajout d'un membre et fin d'un planing poker afin de me tenir informé de l'activité du projet. | 3 | BAS | A faire |
+| 43 | En tant que **contributeur**, je souhaite pouvoir être notifié lors de changements dans le projet: départs/ajout d'un membre et fin d'un planing poker, afin de me tenir informé de l'activité du projet. | 3 | BAS | Faite |
+| 44 | En tant que **contributeur**, je souhaite pouvoir migrer les tâches et les issues pas términé d'un sprint terminé vers un sprint encore d'actualité. | 3 | BAS | Faite |
 
 #### Définition des rôles :
 * **Visiteur** : un utilisateur non authentifié, soit parce qu'il n'est pas enregistré, soit parce qu'il ne s'est pas connecté.
